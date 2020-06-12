@@ -3,6 +3,17 @@
 #date:2020-1-13
 #描述：通过域名获取证书过期时间
 
+#通过读取domain_ssl.info中的域名和端口判断域名文件中的域名是否到期
+#cat  domain_ssl.info
+##域名:端口
+#www.baidu.com:443
+#sh.ebsfw.com:443
+#m.ebsfw.com:443
+#m.pre.ebsfw.com:443
+#sh.pre.ebsfw.com:443
+#m.test.ebsfw.com:443
+
+
 #加载环境变量
 . /etc/profile
 . ~/.bash_profile
