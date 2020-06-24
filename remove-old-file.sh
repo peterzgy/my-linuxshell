@@ -20,10 +20,8 @@ function keep_some_newest_files(){
 
         for file_ops in ${list_ops};do
             echo "$file_ops"
-#           test -d ${file_ops} && rm -rf ${file_ops}
             test -e ${file_ops} && echo  "${file_ops}将删除"
             test -f ${file_ops} && rm -f  ${file_ops}
-	    echo   zou
         done
     else
         echo "total number of files is $num_files."
