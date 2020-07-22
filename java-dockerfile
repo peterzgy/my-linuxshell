@@ -1,0 +1,8 @@
+FROM openjdk:8-jdk
+VOLUME /tmp
+ADD api-gateway.jar app.jar
+RUN sh -c 'touch /app.jar'
+ENV TZ='Asia/Shanghai'
+ENV JAVA_OPTS=""
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+
