@@ -1,0 +1,41 @@
+2020-11-05T16:52:21.212972292+08:00 stdout F 
+2020-11-05T16:52:21.214983227+08:00 stdout F   .   ____          _            __ _ _
+2020-11-05T16:52:21.214998227+08:00 stdout F  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2020-11-05T16:52:21.215000427+08:00 stdout F ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2020-11-05T16:52:21.215002127+08:00 stdout F  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2020-11-05T16:52:21.215003827+08:00 stdout F   '  |____| .__|_| |_|_| |_\__, | / / / /
+2020-11-05T16:52:21.215005427+08:00 stdout F  =========|_|==============|___/=/_/_/_/
+2020-11-05T16:52:21.216020694+08:00 stdout F  :: Spring Boot ::       (v1.5.10.RELEASE)
+2020-11-05T16:52:21.216033793+08:00 stdout F 
+2020-11-05T16:52:22.419985803+08:00 stdout F 16:52:22.359 logback [main] INFO  c.b.c.c.g.CbsCodeGeneratorApplication - Starting CbsCodeGeneratorApplication on cbs-code-generator-54f6ddf854-cw4nk with PID 1 (/app.jar started by root in /)
+2020-11-05T16:52:22.420002603+08:00 stdout F 16:52:22.415 logback [main] INFO  c.b.c.c.g.CbsCodeGeneratorApplication - No active profile set, falling back to default profiles: default
+2020-11-05T16:52:22.47302039+08:00 stdout F 16:52:22.469 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a098129: startup date [Thu Nov 05 16:52:22 CST 2020]; root of context hierarchy
+2020-11-05T16:52:25.052033983+08:00 stdout F 16:52:25.030 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2020-11-05T16:52:25.360176429+08:00 stdout F 16:52:25.349 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-05T16:52:28.039188585+08:00 stdout F 16:52:28.038 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8082 (http)
+2020-11-05T16:52:28.052432575+08:00 stdout F 16:52:28.048 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-05T16:52:28.052445374+08:00 stdout F 16:52:28.048 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-11-05T16:52:28.705883238+08:00 stdout F 16:52:28.698 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-05T16:52:28.705891338+08:00 stdout F 16:52:28.698 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6232 ms
+2020-11-05T16:52:28.858501255+08:00 stdout F 16:52:28.841 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-11-05T16:52:28.858517354+08:00 stdout F 16:52:28.843 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-11-05T16:52:28.858520454+08:00 stdout F 16:52:28.843 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-11-05T16:52:28.858522754+08:00 stdout F 16:52:28.844 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-11-05T16:52:28.858524354+08:00 stdout F 16:52:28.844 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-11-05T16:52:29.064022135+08:00 stdout F 16:52:29.051 logback [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a098129: startup date [Thu Nov 05 16:52:22 CST 2020]; root of context hierarchy] and template loader path [classpath:/templates/]
+2020-11-05T16:52:29.064040034+08:00 stdout F 16:52:29.052 logback [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-11-05T16:52:29.490050492+08:00 stdout F 16:52:29.481 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'threadPoolTaskExecutor'
+2020-11-05T16:52:29.990421863+08:00 stdout F 16:52:29.989 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2a098129: startup date [Thu Nov 05 16:52:22 CST 2020]; root of context hierarchy
+2020-11-05T16:52:30.10854033+08:00 stdout F 16:52:30.108 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/codeGenerate]}" onto public com.bihu.cbs.code.generator.model.ReturnT<java.util.Map<java.lang.String, java.lang.String>> com.bihu.cbs.code.generator.controller.IndexController.codeGenerate(java.lang.String,boolean)
+2020-11-05T16:52:30.113099385+08:00 stdout F 16:52:30.109 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.bihu.cbs.code.generator.controller.IndexController.index()
+2020-11-05T16:52:30.113111585+08:00 stdout F 16:52:30.110 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-11-05T16:52:30.113114384+08:00 stdout F 16:52:30.111 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-11-05T16:52:30.132124365+08:00 stdout F 16:52:30.128 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05T16:52:30.132141364+08:00 stdout F 16:52:30.128 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05T16:52:30.191478983+08:00 stdout F 16:52:30.189 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-11-05T16:52:30.648999651+08:00 stdout F 16:52:30.646 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-11-05T16:52:32.266108344+08:00 stdout F 16:52:30.660 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2020-11-05T16:52:32.974389567+08:00 stdout F 16:52:30.669 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2020-11-05T16:52:32.974466263+08:00 stdout F 16:52:30.828 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-11-05T16:52:32.974478063+08:00 stdout F 16:52:30.902 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8082 (http)
+2020-11-05T16:52:32.974489362+08:00 stdout F 16:52:30.905 logback [main] INFO  c.b.c.c.g.CbsCodeGeneratorApplication - Started CbsCodeGeneratorApplication in 13.927 seconds (JVM running for 26.076)

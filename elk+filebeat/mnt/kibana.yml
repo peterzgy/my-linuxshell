@@ -1,0 +1,13 @@
+## ** THIS IS AN AUTO-GENERATED FILE **
+##
+#
+## Default Kibana configuration for docker target
+server.name: kibana
+#配置Kibana的远程访问
+server.host: "0.0.0.0"
+#配置es访问地址
+elasticsearch.hosts: [ "http://127.0.0.1:9200" ]
+#汉化界面
+i18n.locale: "zh-CN"
+ 
+ #xpack.monitoring.ui.container.elasticsearch.enabled: true""""]""

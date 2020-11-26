@@ -1,0 +1,35 @@
+
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /home/ebs/logs/*.log
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+  
+  logging.level: debug
+
+  filebeat.config.modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: true
+    reload.period: 10s
+    
+setup.template.settings:
+  index.number_of_shards: 1
+
+setup.dashboards.enabled: false
+
+setup.kibana:
+  host: "http://10.0.0.100:5601"
+
+output.logstash:
+  hosts: ["10.0.0.100:5044"]
+
+close_inactive: 12h
+backoff: 1s
+backoff_factor: 1
+flush.timeout: 1s
+processors:
+ - add_host_metadata: ~
+ - add_cloud_metadata: ~

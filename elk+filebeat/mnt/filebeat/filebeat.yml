@@ -1,0 +1,44 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  symlinks: true
+  paths:
+    # 当前目录下的所有.log文件
+    - /home/project/spring-boot-elasticsearch/logs/*.log
+  multiline.pattern: '^20'
+  multiline.negate: true
+  #multiline.match: previous
+  multiline.match: after
+ 
+logging.level: debug
+ 
+filebeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+ 
+setup.template.settings:
+  index.number_of_shards: 1
+ 
+setup.dashboards.enabled: false
+ 
+setup.kibana:
+  host: "http://172.17.0.2:5601"
+ 
+# 不直接传输至ES
+#output.elasticsearch:
+# hosts: ["http://es-master:9200"]
+# index: "filebeat-%{[beat.version]}-%{+yyyy.MM.dd}"
+ 
+output.logstash:
+  hosts: ["172.17.0.4:5044"]
+ 
+#scan_frequency: 1s
+close_inactive: 12h
+backoff: 1s
+max_backoff: 1s
+backoff_factor: 1
+flush.timeout: 1s
+ 
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
