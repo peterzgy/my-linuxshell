@@ -24,7 +24,7 @@ EOF
 jenkins_cli_path="/home/ebs/alldata/soft/apache-tomcat/webapps/jenkins/WEB-INF/jenkins-cli.jar"
 jenkins_url="http://127.0.0.1:8080/jenkins/"
 jenkins_user="admin"
-jenkins_pwd="Jenkins@ebs#123"
+jenkins_pwd="********"
 jenkins_cmd="java -jar  ${jenkins_cli_path}  -s ${jenkins_url} -auth ${jenkins_user}:${jenkins_pwd}"  
 
 
