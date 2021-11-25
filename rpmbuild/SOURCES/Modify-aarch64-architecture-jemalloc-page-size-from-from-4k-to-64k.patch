@@ -1,0 +1,25 @@
+From 8c4c3730d69ea1e3352d35e18999d42dca4c07e5 Mon Sep 17 00:00:00 2001
+From: lingsheng <lingsheng@huawei.com>
+Date: Mon, 29 Mar 2021 17:37:06 +0800
+Subject: [PATCH] Modify aarch64 architecture jemalloc page size from 4k to 64k
+
+---
+ deps/Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/deps/Makefile b/deps/Makefile
+index eb35c1e..2ba6ae3 100644
+--- a/deps/Makefile
++++ b/deps/Makefile
+@@ -81,7 +81,7 @@ JEMALLOC_LDFLAGS= $(LDFLAGS)
+ 
+ jemalloc: .make-prerequisites
+ 	@printf '%b %b\n' $(MAKECOLOR)MAKE$(ENDCOLOR) $(BINCOLOR)$@$(ENDCOLOR)
+-	cd jemalloc && ./configure --with-version=5.1.0-0-g0 --with-lg-quantum=3 --with-jemalloc-prefix=je_ --enable-cc-silence CFLAGS="$(JEMALLOC_CFLAGS)" LDFLAGS="$(JEMALLOC_LDFLAGS)"
++	cd jemalloc && ./configure --with-version=5.1.0-0-g0 --with-lg-quantum=3 --with-jemalloc-prefix=je_ --enable-cc-silence CFLAGS="$(JEMALLOC_CFLAGS)" LDFLAGS="$(JEMALLOC_LDFLAGS)" --with-lg-page=16
+ 	cd jemalloc && $(MAKE) CFLAGS="$(JEMALLOC_CFLAGS)" LDFLAGS="$(JEMALLOC_LDFLAGS)" lib/libjemalloc.a
+ 
+ .PHONY: jemalloc
+-- 
+2.23.0
+
